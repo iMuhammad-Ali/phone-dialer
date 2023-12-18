@@ -6,7 +6,7 @@ import { useDialerContext } from '../../DialerContext';
 const Dialer = () => {
     const { dialedNumber, handleNumberClick, handleCallButtonClick, handleEraseButtonClick } = useDialerContext();
     return (
-        <div className="overflow-hidden h-screen px-12 sm:px-0 sm:w-1/2 md:w-1/3 lg:1/4 py-6 rounded flex flex-col items-center justify-center bg-gray-100 shadow-2xl">
+        <div className="overflow-hidden min-h-2/25 max-h-2/25 px-12 sm:px-0 sm:w-1/2 md:w-1/3 lg:1/4 py-6 rounded flex flex-col items-center justify-center bg-gray-100 shadow-2xl">
             <div className="max-w-2/25 overflow-x-scroll mb-8 text-4xl font-bold py-2 border-b border-blue-400 scrollbar-thin scrollbar-thumb-blue-400 scrollbar-track-gray-100 ">{dialedNumber}</div>
             <div className="grid grid-cols-3 gap-4">
                 {[1, 2, 3, 4, 5, 6, 7, 8, 9, '*', 0, '#'].map((number) => (

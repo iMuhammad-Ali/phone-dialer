@@ -10,7 +10,7 @@ const DialedNumber = () => {
   const { dialedNumber } = useDialerContext();
 
   return (
-    <div className="px-12 sm:px-0 sm:w-1/2 md:w-1/3 lg:1/4 py-6 rounded flex flex-col items-center justify-between py-12 h-screen bg-gray-100 shadow-2xl">
+    <div className="min-h-2/25 max-h-2/25 px-12 sm:px-0 sm:w-1/2 md:w-1/3 lg:1/4 py-6 rounded flex flex-col items-center justify-between py-12 bg-gray-100 shadow-2xl">
       <div>
         <div className="text-3xl font-bold py-2">{dialedNumber}</div>
         <div className="my-2 text-sm">Calling...</div>
